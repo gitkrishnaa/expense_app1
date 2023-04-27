@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>problem1- i delete user then it delete in database but not refresh
+         i have used also res.redirect;
+         and
+         when data insertinging then it works fine
+</h2>
+<h2>problem2- when i delete button click
+          it showing error in broser console but backend and databse working fine
+        </h2>  {
+            "message": "Request failed with status code 404",
+            "name": "AxiosError",
+            "stack": "AxiosError: Request failed with status code 404\n    at https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js:1:21567\n    at XMLHttpRequest.d (https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js:1:21712)",
+            "config": {
+                "transitional": {
+                    "silentJSONParsing": true,
+                    "forcedJSONParsing": true,
+                    "clarifyTimeoutError": false
+                },
+                "adapter": [
+                    "xhr",
+                    "http"
+                ],
+                "transformRequest": [
+                    null
+                ],
+                "transformResponse": [
+                    null
+                ],
+                "timeout": 0,
+                "xsrfCookieName": "XSRF-TOKEN",
+                "xsrfHeaderName": "X-XSRF-TOKEN",
+                "maxContentLength": -1,
+                "maxBodyLength": -1,
+                "env": {},
+                "headers": {
+                    "Accept": "application/json, text/plain, */*",
+                    "Content-Type": "application/json"
+                },
+                "method": "post",
+                "url": "http://localhost:4500/deleteById",
+                "data": "{\"id\":\"14\"}"
+            },
+            "code": "ERR_BAD_REQUEST",
+            "status": 404
+        }
+</body>
+</html>
